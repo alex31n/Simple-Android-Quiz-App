@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="text"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_ans_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text"/>
+        <Button
+            android:id="@+id/btn_ans_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text"/>
+        <Button
+            android:id="@+id/btn_ans_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text"/>
+        <Button
+            android:id="@+id/btn_ans_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
